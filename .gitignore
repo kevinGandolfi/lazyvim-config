@@ -1,0 +1,20 @@
+# Swap, temp, and compiled files
+*.swp
+*.bak
+*.tmp
+*.undo
+*.luac
+
+# Lazy.nvim plugin manager cache
+lazy/
+lua/lazy/
+lua/lazyvim/
+
+# Internal Neoconf data
+lazyvim-config/
+lazyvim.json
+.neoconf.json
+
+# Node.js / Python cache
+node_modules/
+__pycache__/

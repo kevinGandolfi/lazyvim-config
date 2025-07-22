@@ -1,0 +1,7 @@
+{
+  "language": "postgresql",
+  "useTabs": false,
+  "tabWidth": 4,
+  "keywordCase": "upper",
+  "linesBetweenQueries": 2
+}
