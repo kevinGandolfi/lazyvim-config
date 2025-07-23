@@ -32,6 +32,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
             tnoremap <M-k> <C-\><C-n><C-w>k
             tnoremap <M-l> <C-\><C-n><C-w>l
             tnoremap <M-w> <C-\><C-n><C-w>w
+            tnoremap <M-q> <C-\><C-n><C-w>q
         ]])
   end,
 })

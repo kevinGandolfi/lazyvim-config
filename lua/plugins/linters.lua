@@ -5,6 +5,7 @@ return {
   opts = {
     linters_by_ft = {
       sql = { "sqlfluff" },
+      javascript = { "eslint" },
     },
   },
   config = function(_, opts)
