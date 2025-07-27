@@ -2,11 +2,12 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- Move with visual lines
+-- Miscellaneous
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
-
 vim.keymap.set("n", "<C-l>", "<Cmd>nohlsearch<CR><C-l>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-j>", "<C-d>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-k>", "<C-u>", { noremap = true, silent = true })
 
 -- Smartword
 vim.keymap.set("n", "w", "<Plug>(smartword-w)")
