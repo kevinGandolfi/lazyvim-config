@@ -11,6 +11,7 @@ lua/lazy/
 lua/lazyvim/
 
 # Internal Neoconf data
+lazy-lock.json
 lazyvim-config/
 lazyvim.json
 .neoconf.json
