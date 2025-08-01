@@ -25,16 +25,14 @@ vim.keymap.set("n", "<M-w>", "<C-w>w")
 -- Terminal mode mappings
 vim.api.nvim_create_autocmd("TermOpen", {
   callback = function()
-    vim.cmd([[
-            tnoremap <Esc> <C-\><C-n>
-            tnoremap <C-v><Esc> <Esc>
-            tnoremap <M-h> <C-\><C-n><C-w>h
-            tnoremap <M-j> <C-\><C-n><C-w>j
-            tnoremap <M-k> <C-\><C-n><C-w>k
-            tnoremap <M-l> <C-\><C-n><C-w>l
-            tnoremap <M-w> <C-\><C-n><C-w>w
-            tnoremap <M-q> <C-\><C-n><C-w>q
-        ]])
+    vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
+    vim.keymap.set("t", "<C-v><Esc>", "<Esc>", { noremap = true, silent = true })
+    vim.keymap.set("t", "<M-h>", [[<C-\><C-n><C-w>h]], { noremap = true, silent = true })
+    vim.keymap.set("t", "<M-j>", [[<C-\><C-n><C-w>j]], { noremap = true, silent = true })
+    vim.keymap.set("t", "<M-k>", [[<C-\><C-n><C-w>k]], { noremap = true, silent = true })
+    vim.keymap.set("t", "<M-l>", [[<C-\><C-n><C-w>l]], { noremap = true, silent = true })
+    vim.keymap.set("t", "<M-w>", [[<C-\><C-n><C-w>w]], { noremap = true, silent = true })
+    vim.keymap.set("t", "<M-q>", [[<C-\><C-n><C-w>q]], { noremap = true, silent = true })
   end,
 })
 
